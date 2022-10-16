@@ -2,36 +2,75 @@
     font-family: 'Noto Sans Mono', monospace;
 }
 */
+*{
+    box-sizing: border-box;
+}
 body{
     /*background-image: url(https://img.freepik.com/psd-premium/maqueta-logotipo-realista-moderna-sala-fitness-gimnasio_9790-721.jpg?w=2000);
     background-size: cover;*/
     background-color: rgba(42, 42, 44, 0.774);
+    margin: 0,
 }
-
+/*
 nav{
-    background-color: rgb(165, 170, 179);
+    
     height: 50px;
     font-weight: bold;
-    font-size:xx-large
-}
+    font-size:xx-large 
+}*/
 .brand img{
-    width: 45px;
-    height: 45;
+    width: 55px;
+    height: 55px;
 }
 
 
 #menubar {
-    margin: 0.5rem 0rem 0.5rem 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
 }  
-#inicio-index {
-    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cropped-image-of-unrecognisable-man-working-out-royalty-free-image-1640868217.jpg?crop=1.00xw:0.754xh;0,0.0793xh&resize=1200:*);
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(https://i.imgur.com/bQtCh9Q.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 h1{
+    font-size: 2em;
     text-align: center;
 }
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1em;
+}
 
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
+    color: white;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: rgb(102, 29, 170) ;
+}
 /* index Responsive */
 .map-responsive{
 
@@ -60,13 +99,12 @@ h1{
 }
 
 #text-inicio{
-    background-color:rgba(77, 176, 201, 0.87); filter:alpha(opacity=10); opacity:.6;
     text-align: center;
     font-weight: bold;
+    color:white
 
 }
 #text-costo {
-    background-color: rgba(255, 255, 0, 0.274);
     text-align: center;
     font-weight: bold;
 
@@ -80,13 +118,30 @@ table, th, td {
 
 
 body #contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(img/pesas2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     
-    background-image: url(img/fondo1.jpg);
+   /* background-image: url(img/fondo1.jpg);
     background-size: cover;
     background-size: 95% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-attachment: fixed;
+    background-attachment: fixed;
     
     */
     }
@@ -106,10 +161,10 @@ footer{
 
 body{
     background-color: lightgrey;
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif;
   }
   
-  .container{
+.container{
     margin: auto;
     background-color: white;
     width: 800px;
@@ -120,6 +175,7 @@ body{
       padding: 0;
       margin: 0;
       list-style: none;
+      font-size: 1.2em;
   }
   
   ul.slider{
@@ -173,4 +229,47 @@ body{
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
+  }
+  .container {
+    max-width: 1400px;
+    margin: auto
+  }
+  header{
+    background-color: rgb(245,245,245);
+  }
+  
+  header .brand{
+    margin: 0;
+    max-height: 3em;
+    max-width: 3em;
+   
+    
+  }
+
+  header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+ 
+  nav {
+    display: flex;
+    padding-bottom: 25px;
+  
+  }
+
+  header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+  }
+
+  header a:hover {
+    color:black
+  }
+
+  .ubicacion {
+    max-width: 1000px;
   }
