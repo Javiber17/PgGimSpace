@@ -273,3 +273,16 @@ body{
   .ubicacion {
     max-width: 1000px;
   }
+  #banner{
+    animation-name: cambiarColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes cambiarColor {
+    
+    from{color:white;} 
+
+    to{color:rgba(121, 113, 113, 0.993)}
+
+  }
