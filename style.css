@@ -114,17 +114,17 @@ button:hover{
 /*table, th, td {
     border: 1px solid black;
     width: auto; */
-.table {
+table {
   width: 100%;
   margin: 0;
   padding: 0;
   table-layout: fixedti;
 }
-.table caption{
+table caption{
   font-size: 22px;
 }
 
-.table th:hover {
+table th:hover {
   background-color: rgb(165, 231, 41);
 }
 table, th, td {
