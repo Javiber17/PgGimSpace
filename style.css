@@ -111,11 +111,35 @@ button:hover{
 }
 
 
+/*table, th, td {
+    border: 1px solid black;
+    width: auto; */
+.table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  table-layout: fixedti;
+}
+.table caption{
+  font-size: 22px;
+}
+
+.table th:hover {
+  background-color: rgb(165, 231, 41);
+}
 table, th, td {
     border: 1px solid black;
     width: auto;
 }
-
+th{
+  background-color:rgb(209, 183, 144);
+}
+td{
+  background-color: rgb(137, 137, 243);
+}
+td:first{
+  background-color: rgb(116, 113, 111);
+}
 
 body #contacto{
     display: flex;
